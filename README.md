@@ -2,7 +2,7 @@ Hello, to run this application make sure you have installed NodeJS.
 
 Now after opening this project in your local folder, install Node Modules.
 
-Install uuid and react-router-dom saperately.
+Install uuid and react-router-dom separately.
 
 Now npm start in terminal to run this project.
 
