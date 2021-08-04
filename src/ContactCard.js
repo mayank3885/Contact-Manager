@@ -16,13 +16,16 @@ const CardContact = (props) => {
         </div>
       </div>
       <div className='teen'>
-        <i className='trash alternate outline icon' style={{color: 'red'}}
+        <Link to={{pathname:`/edit`, state: {contact: props.contact}}}>
+        <i className='edit alternate outline icon' style={{color: 'blue'}}
+        ></i>
+        </Link>
+        <i className='trash alternate outline icon' style={{color: 'red',marginLeft:"10px"}}
         onClick={() => {
           let r=window.confirm('Are you sure you want to delete this contact')
           if(r===true){
             props.clickHandler(id)
           }
-
         }}></i>
       </div>
 
